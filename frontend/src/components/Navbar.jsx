@@ -32,7 +32,7 @@ const Navbar = () => {
 
     return (
         <nav className="fixed top-0 left-0 right-0 z-[100] backdrop-blur-xl bg-black/40 border-b border-white/10 px-8 py-5">
-            <div className="max-w-7xl mx-auto flex justify-between items-center">
+            <div className="mx-auto flex justify-between items-center">
                 
                 {/* BRAND LOGO */}
                 <Link to="/" className="group flex items-center gap-3">
@@ -44,7 +44,7 @@ const Navbar = () => {
 
                 {/* DESKTOP MENU */}
                 <div className="hidden lg:flex items-center gap-10">
-                    <Link to="/" className={`text-xs font-black uppercase tracking-widest transition-colors ${location.pathname === '/' ? 'text-blue-400' : 'text-gray-500 hover:text-white'}`}>
+                    <Link to="/" className={`text-lg font-black text-white uppercase tracking-widest transition-colors`}>
                         Home
                     </Link>
                     
@@ -53,7 +53,7 @@ const Navbar = () => {
                             {/* PORTAL LINK: Takes Tenant to Marketplace / Owner to Portfolio */}
                             <Link 
                                 to={getDashboardLink()} 
-                                className={`text-xs font-black uppercase tracking-widest flex items-center gap-2 transition-colors ${location.pathname.includes('dashboard') ? 'text-blue-400' : 'text-gray-500 hover:text-white'}`}
+                                className={`text-lg text-white uppercase tracking-widest flex items-center gap-2 transition-colors}`}
                             >
                                 <LayoutDashboard size={14} /> My Portal
                             </Link>
@@ -61,10 +61,10 @@ const Navbar = () => {
                             {/* USER PROFILE SECTION */}
                             <div className="flex items-center gap-4 border-l border-white/10 pl-8">
                                 <div className="flex flex-col items-end">
-                                    <Link to="/profile" className={`text-sm font-bold leading-none transition-colors ${location.pathname === '/profile' ? 'text-blue-400' : 'text-white hover:text-blue-400'}`}>
+                                    <Link to="/profile" className={`text-[15px] font-bold leading-none transition-colors ${location.pathname === '/profile' ? 'text-blue-400' : 'text-white hover:text-blue-400'}`}>
                                         {user.name}
                                     </Link>
-                                    <span className="text-[9px] uppercase tracking-tighter text-blue-400 font-black mt-1 opacity-80">
+                                    <span className="text-[15px] uppercase tracking-tighter text-blue-400 font-black mt-1 opacity-80">
                                         {user.role}
                                     </span>
                                 </div>

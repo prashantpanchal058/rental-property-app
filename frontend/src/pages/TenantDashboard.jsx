@@ -59,8 +59,8 @@ const TenantDashboard = () => {
                 <motion.header initial={{ opacity: 0, y: -20 }} animate={{ opacity: 1, y: 0 }} className="mb-16">
                     <div className="flex flex-col lg:flex-row justify-between items-start lg:items-center gap-8">
                         <div className="text-left">
-                            <p className="text-blue-500 font-black uppercase tracking-[0.4em] text-[9px] mb-3">Solapur Premium Marketplace</p>
-                            <h1 className="text-7xl font-black tracking-tighter italic leading-none">Property Hub</h1>
+                            <p className="text-blue-500 font-black uppercase tracking-[0.4em] text-15px] mb-3">Solapur Premium Marketplace</p>
+                            <h1 className="text-3xl font-black tracking-tighter italic leading-none">Property Hub</h1>
                         </div>
                         
                         <Link to="/profile" className="group relative w-full lg:w-auto">

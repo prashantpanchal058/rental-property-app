@@ -11,7 +11,7 @@ const Home = () => {
 
             <section className="relative pt-40 pb-20 px-6 text-center z-10">
                 <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }}>
-                    <span className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-[10px] font-black uppercase tracking-[0.3em] text-blue-400 mb-8 inline-block">
+                    <span className="px-4 py-1.5 rounded-full border border-white/10 bg-white/5 text-[15px] font-black uppercase tracking-[0.3em] text-blue-400 mb-8 inline-block">
                         Solapur's Premium Rental Network
                     </span>
                     <h1 className="text-7xl md:text-8xl font-black mb-8 tracking-tighter leading-tight">

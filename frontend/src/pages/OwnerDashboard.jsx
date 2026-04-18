@@ -340,8 +340,8 @@ const OwnerDashboard = () => {
             <main className="flex-1 overflow-y-auto p-12 bg-[radial-gradient(circle_at_bottom_left,_var(--tw-gradient-stops))] from-purple-900/10 via-black to-black">
                 <header className="flex justify-between items-center mb-16">
                     <div>
-                        <h2 className="text-5xl font-black tracking-tighter italic">{activeTab}</h2>
-                        <p className="text-gray-500 font-bold uppercase text-[10px] tracking-[0.3em] mt-2">Owner: {user?.name || "Member"}</p>
+                        <h2 className="text-2xl font-black tracking-tighter italic">{activeTab}</h2>
+                        <p className="text-gray-500 font-bold uppercase text-[15px] tracking-[0.3em] mt-2">Owner: {user?.name || "Member"}</p>
                     </div>
                     {/* FIXED NAVIGATION PATH */}
                     <button
@@ -357,15 +357,15 @@ const OwnerDashboard = () => {
                         <motion.div key="overview" initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} exit={{ opacity: 0 }} className="space-y-12">
                             <div className="grid grid-cols-1 md:grid-cols-3 gap-8 mb-12">
                                 <div className="bg-white/5 border border-white/10 p-8 rounded-[2.5rem] backdrop-blur-md">
-                                    <p className="text-gray-500 font-bold text-[10px] uppercase">Active Listings</p>
+                                    <p className="text-gray-500 font-bold text-[15px] uppercase">Active Listings</p>
                                     <h3 className="text-6xl font-black mt-4 text-purple-400">{properties?.length || 0}</h3>
                                 </div>
                                 <div className="bg-white/5 border border-white/10 p-8 rounded-[2.5rem] backdrop-blur-md">
-                                    <p className="text-gray-500 font-bold text-[10px] uppercase">Total Requests</p>
+                                    <p className="text-gray-500 font-bold text-[15px] uppercase">Total Requests</p>
                                     <h3 className="text-6xl font-black mt-4 text-blue-400">{bookings?.length || 0}</h3>
                                 </div>
                                 <div className="bg-white/5 border border-white/10 p-8 rounded-[2.5rem] backdrop-blur-md">
-                                    <p className="text-gray-500 font-bold text-[10px] uppercase">Est. Revenue</p>
+                                    <p className="text-gray-500 font-bold text-[15px] uppercase">Est. Revenue</p>
                                     <h3 className="text-6xl font-black mt-4 text-green-500">₹ {amount} </h3>
                                 </div>
                             </div>
