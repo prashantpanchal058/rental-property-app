@@ -4,6 +4,7 @@ require('dotenv').config({ path: './.env' });
 const express = require('express');
 const cors = require('cors');
 const connectDatabase = require('./config/database');
+const path = require('path');
 
 // Import all route files
 const authRoutes = require('./routes/authRoutes');
@@ -23,6 +24,16 @@ app.use(cors({
 
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
+const __dirnameResolved = path.resolve();
+
+// Frontend build
+app.use(express.static(path.join(__dirnameResolved, "frontend", "dist")));
+
+app.get(/^(?!\/api).*/, (_, res) => {
+    res.sendFile(
+        path.join(__dirnameResolved, "frontend", "dist", "index.html")
+    );
+});
 
 // ==================== ROUTES ====================
 app.use('/api/auth', authRoutes);

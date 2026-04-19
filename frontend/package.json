@@ -18,6 +18,7 @@
     "leaflet": "^1.9.4",
     "lucide-react": "^1.7.0",
     "nodemon": "^3.1.14",
+    "property-rental-backend": "file:..",
     "react": "^18.3.1",
     "react-dom": "^18.3.1",
     "react-is": "^19.2.4",

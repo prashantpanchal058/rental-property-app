@@ -4,8 +4,9 @@
   "description": "Property Rental System Backend",
   "main": "server.js",
   "scripts": {
-    "start": "node server.js",
-    "dev": "nodemon server.js"
+    "dev": "nodemon backend/server.js",
+    "start": "nodemon backend/server.js",
+    "build": "npm install && npm install --prefix frontend && npm run build --prefix frontend"
   },
   "keywords": ["property", "rental", "backend"],
   "author": "",
