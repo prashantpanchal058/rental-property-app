@@ -111,7 +111,7 @@ exports.login = async (req, res) => {
         message: 'Invalid credentials',
       });
     }
-
+    console.log(user._id)
     const token = generateToken(user._id);
 
     res.status(200).json({
