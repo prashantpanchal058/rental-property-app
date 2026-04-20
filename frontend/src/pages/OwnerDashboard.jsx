@@ -30,7 +30,7 @@ const OwnerDashboard = () => {
         const token = localStorage.getItem('token');
 
         try {
-            const response = await fetch('http://localhost:5000/api/bookings/owner/requests', {
+            const response = await fetch('https://rental-property-app.onrender.com/api/bookings/owner/requests', {
                 method: 'GET',
                 headers: {
                     'Content-Type': 'application/json',
@@ -209,9 +209,9 @@ const OwnerDashboard = () => {
             let url = '';
 
             if (action === 'accept') {
-                url = `http://localhost:5000/api/bookings/${id}/accept`;
+                url = `https://rental-property-app.onrender.com//api/bookings/${id}/accept`;
             } else if (action === 'reject') {
-                url = `http://localhost:5000/api/bookings/${id}/reject`;
+                url = `https://rental-property-app.onrender.com//api/bookings/${id}/reject`;
             }
 
             const response = await fetch(url, {

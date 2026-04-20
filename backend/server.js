@@ -18,7 +18,7 @@ const app = express();
 
 // ==================== MIDDLEWARE ====================
 app.use(cors({
-    origin: 'http://localhost:5173',
+    origin: 'https://rental-property-app.onrender.com/',
     credentials: true
 }));
 
@@ -82,7 +82,7 @@ const startServer = async () => {
 ========================================
 🚀 Server Started Successfully
 ========================================
-📍 http://localhost:${PORT}/api
+📍 http://https://rental-property-app.onrender.com/
 ========================================
       `);
     });
